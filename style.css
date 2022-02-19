@@ -1,0 +1,138 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: rgb(221, 218, 221);
+  text-align: center;
+}
+header {
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  color: #202c2d;
+  text-shadow: 0 1px #808d93, -1px 0 #cdd2d5, -1px 2px #808d93, -2px 1px #cdd2d5,
+    -2px 3px #808d93, -3px 2px #cdd2d5, -3px 4px #808d93, -4px 3px #cdd2d5,
+    -4px 5px #808d93, -5px 4px #cdd2d5, -5px 6px #808d93, -6px 5px #cdd2d5,
+    -6px 7px #808d93, -7px 6px #cdd2d5, -7px 8px #808d93, -8px 7px #cdd2d5;
+  color: #202c2d;
+}
+header p {
+  font-family: "Ubuntu", sans-serif;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+.baby-name {
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-size: 64px;
+}
+.male-section {
+  width: 500px;
+  height: 500px;
+  background-color: rgba(135, 230, 255, 0.7);
+  border: 1px solid black;
+  border-radius: 10px 10px 10px 10px;
+  margin-right: 100px;
+  padding: 10px;
+  -webkit-box-shadow: 5px 5px 0px 0px #87e6ff,
+    10px 10px 0px 0px rgba(135, 230, 255, 0.7),
+    15px 15px 0px 0px rgba(135, 230, 255, 0.5),
+    20px 20px 0px 0px rgba(135, 230, 255, 0.3),
+    25px 25px 0px 0px rgba(135, 230, 255, 0.1),
+    25px 25px 0px 0px rgba(135, 230, 255, 0.1);
+  box-shadow: 5px 5px 0px 0px #87e6ff,
+    10px 10px 0px 0px rgba(135, 230, 255, 0.7),
+    15px 15px 0px 0px rgba(135, 230, 255, 0.5),
+    20px 20px 0px 0px rgba(135, 230, 255, 0.3),
+    25px 25px 0px 0px rgba(135, 230, 255, 0.1),
+    25px 25px 0px 0px rgba(135, 230, 255, 0.1);
+}
+.male-section h2 {
+}
+.female-section {
+  width: 500px;
+  height: 500px;
+  background-color: rgba(255, 180, 212, 0.7);
+  border: 1px solid black;
+  border-radius: 10px 10px 10px 10px;
+  padding: 10px;
+  -webkit-box-shadow: 5px 5px 0px 0px #ffb4d4,
+    10px 10px 0px 0px rgba(255, 180, 212, 0.7),
+    15px 15px 0px 0px rgba(255, 180, 212, 0.5),
+    20px 20px 0px 0px rgba(255, 180, 212, 0.3),
+    25px 25px 0px 0px rgba(255, 180, 212, 0.1),
+    25px 25px 0px 0px rgba(255, 180, 212, 0.1);
+  box-shadow: 5px 5px 0px 0px #ffb4d4,
+    10px 10px 0px 0px rgba(255, 180, 212, 0.7),
+    15px 15px 0px 0px rgba(255, 180, 212, 0.5),
+    20px 20px 0px 0px rgba(255, 180, 212, 0.3),
+    25px 25px 0px 0px rgba(255, 180, 212, 0.1),
+    25px 25px 0px 0px rgba(255, 180, 212, 0.1);
+}
+#findNameBtn {
+  width: 100px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 10%;
+  position: relative;
+  top: 200px;
+  right: 50px;
+}
+.hidden {
+  display: none;
+}
+
+/* CSS */
+#findNameBtn {
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(
+    100% 100% at 100% 0,
+    #5adaff 0,
+    #5468ff 100%
+  );
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(58, 65, 111, 0.5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono", monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 18px;
+}
+
+#findNameBtn:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+#findNameBtn:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #e03caf 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+#findNameBtn:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
